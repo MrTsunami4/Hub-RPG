@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://do2vg0fxnnmpc"]
+[gd_scene load_steps=7 format=3 uid="uid://do2vg0fxnnmpc"]
+
+[ext_resource type="Texture2D" uid="uid://cq7ldes04ys1x" path="res://addons/kenney_particle_pack/fire_01.png" id="1_lids7"]
 
 [sub_resource type="Gradient" id="Gradient_s7ls4"]
 colors = PackedColorArray(0.938121, 0.772004, 7.70092e-07, 1, 0.983772, 0.215553, 0.362996, 1)
@@ -15,14 +17,19 @@ initial_velocity_min = 2.0
 initial_velocity_max = 10.0
 color_ramp = SubResource("GradientTexture1D_0w24c")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0yek5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frkhe"]
+transparency = 1
 vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_lids7")
+billboard_mode = 1
 
-[sub_resource type="PrismMesh" id="PrismMesh_i7vl6"]
-material = SubResource("StandardMaterial3D_0yek5")
+[sub_resource type="PlaneMesh" id="PlaneMesh_12u78"]
+material = SubResource("StandardMaterial3D_frkhe")
+orientation = 2
 
 [node name="GPUParticles3D" type="GPUParticles3D"]
-amount = 20
+amount = 50
+lifetime = 0.3
 randomness = 0.55
 process_material = SubResource("ParticleProcessMaterial_cjlg7")
-draw_pass_1 = SubResource("PrismMesh_i7vl6")
+draw_pass_1 = SubResource("PlaneMesh_12u78")
