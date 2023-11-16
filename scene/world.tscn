@@ -41,7 +41,7 @@ data = {
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="GPUParticles3D" parent="." instance=ExtResource("3_kwbbc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839468, 1.02, 6.53333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839468, 1.60024, 6.53333)
 
 [node name="GPUParticles3D2" parent="." instance=ExtResource("3_kwbbc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.78493, 1.02, 6.51062)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.78493, 1.47746, 6.51062)
