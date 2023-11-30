@@ -11,9 +11,9 @@ gradient = SubResource("Gradient_s7ls4")
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cjlg7"]
 direction = Vector3(0, 1, 0)
 spread = 5.0
-gravity = Vector3(0, 0, 0)
 initial_velocity_min = 0.5
 initial_velocity_max = 8.0
+gravity = Vector3(0, 0, 0)
 color_ramp = SubResource("GradientTexture1D_0w24c")
 turbulence_enabled = true
 

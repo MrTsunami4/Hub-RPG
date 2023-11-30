@@ -30,7 +30,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30741, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(-1, 2.30685e-08, -8.43243e-08, 0, 0.964557, 0.263873, 8.74228e-08, 0.263873, -0.964557, -0.0521401, 2.79221, -3.76275)
+transform = Transform3D(-0.676992, 0.194208, -0.709905, 1.77636e-15, 0.964557, 0.263873, 0.735991, 0.17864, -0.652997, -2.65982, 2.79221, -3.76275)
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("2_2cwlg")
